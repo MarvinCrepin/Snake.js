@@ -262,7 +262,7 @@ window.onload = function()
             case 40:
                 newDirection = "down";
                 break;
-            case 83: 
+            case 32: 
                 restart();
                 return;
             default:
