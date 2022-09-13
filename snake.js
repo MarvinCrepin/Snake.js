@@ -1,22 +1,22 @@
 window.onload = function()
 {
-    let canvasWidth = 900;
-    let canvasHeight = 600;
-    let blockSize = 30;
-    let ctx;
-    let delay = 80;
-    let snakee;
-    let applee;
-    let widthInBlocks = canvasWidth/blockSize;
-    let heightInBlocks = canvasHeight/blockSize;
-    let score;
+    const canvasWidth = 900;
+    const canvasHeight = 600;
+    const blockSize = 30;
+    const ctx;
+    const delay = 80;
+    const snakee;
+    const applee;
+    const widthInBlocks = canvasWidth/blockSize;
+    const heightInBlocks = canvasHeight/blockSize;
+    const score;
     
     
     init();
     
     function init()
     {
-        let canvas = document.createElement('canvas');
+        const canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
         canvas.style.border = "5px solid";
@@ -51,7 +51,7 @@ window.onload = function()
             snakee.ateApple =  true;
             do 
             {
-          applee.setNewPosition();      // LE SNAKE A GRAILLE LA POMME    
+          applee.setNewPosition(); 
             }
             while(applee.IsOnSnake(snakee))
         }
